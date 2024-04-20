@@ -1,9 +1,10 @@
 import pygame
+import os
 
 pygame.init()
 window = pygame.display.set_mode((1000, 500))
 pygame.display.set_caption("Pong")
-background = pygame.image.load("Projects\\Python\\pygame\\Pong\\background.png")
+background = pygame.image.load(os.path.dirname(__file__) + "\\background.png")
 background = pygame.transform.scale(background, (window.get_width(), window.get_height()))
 
 clock = pygame.time.Clock()
