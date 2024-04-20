@@ -14,7 +14,7 @@ class Bat:
     y = 0
     width = 5
     height = 70
-    rect = None
+    rect = None;
     def __init__(self, x: int, y: int):
         self.x = x
         self.y = y
